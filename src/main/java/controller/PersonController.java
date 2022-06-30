@@ -18,7 +18,6 @@ import service.IPersonService;
 
 @RestController
 @RequestMapping("/person")
-@CrossOrigin(origins = "https://portfolio-argentina-prog-f5593.web.app/")
 public class PersonController {
     
     //@Autowired
