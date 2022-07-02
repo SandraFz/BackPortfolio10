@@ -31,7 +31,7 @@ return new CorsFilter(source);
 }
         */
 
-/*
+
 @Bean
     public CorsFilter corsFilter() {
         final UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
@@ -51,6 +51,6 @@ return new CorsFilter(source);
         config.addAllowedMethod("PATCH");
         source.registerCorsConfiguration("/**", config);
         return new CorsFilter(source);
-    }*/
+    }
 
 }
