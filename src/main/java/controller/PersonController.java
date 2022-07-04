@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import service.IPersonService;
 
 @RestController
-@RequestMapping("/person")
+@RequestMapping("person/")
 public class PersonController {
     
     //@Autowired
@@ -31,7 +31,7 @@ public class PersonController {
     
     
     //Crea una nueva persona.
-    @PostMapping("/new")
+    @PostMapping("new")
     public ResponseEntity<PersonDTO> createPerson(@RequestBody PersonDTO persDto){
         
         PersonDTO newPersDto = persoServ.createPerson(persDto);
@@ -52,7 +52,7 @@ public class PersonController {
     }
     
     //Busca una persona de la lista.
-    @GetMapping("/find/{id}")
+    @GetMapping("find/{id}")
     public ResponseEntity<PersonDTO> findPerson(@PathVariable Long id){
         PersonDTO persDto = persoServ.findPerson(id);
         
